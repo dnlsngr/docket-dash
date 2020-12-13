@@ -12,6 +12,6 @@ def index(request):
             data=f.read()
 
             obj = json.loads(data)
-            users.append(data)
+            docket_data.append(data)
 
     return HttpResponse(f"Hello, world. You're at the dockets index. there are {len(docket_data)} files to display")
